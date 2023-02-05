@@ -1,19 +1,34 @@
-.formInput{
-    display: flex;
-    flex-direction: column;
-    width: 280px;
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
 }
 
-input{
-    padding: 15px;
-    margin: 10px 0px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    background: rgba(201, 199, 199, 0.437);
+input {
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background: rgba(201, 199, 199, 0.437);
 }
 
-label{
-    color: rgb(50, 50, 50);
-    font-size: 12px;
-    font-weight: 700;
+label {
+  color: rgb(50, 50, 50);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+span {
+  font-size: 12px;
+  padding: 3px;
+  color: rgba(167, 17, 17, 0.864);
+  display: none;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid rgba(167, 17, 17, 0.864);
+}
+
+input:invalid[focused="true"] ~ span {
+  display: block;
 }
