@@ -1,0 +1,19 @@
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+input{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: rgba(201, 199, 199, 0.437);
+}
+
+label{
+    color: rgb(50, 50, 50);
+    font-size: 12px;
+    font-weight: 700;
+}
